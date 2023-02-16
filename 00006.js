@@ -5,6 +5,16 @@
 
 function konversiMenit(menit) {
   // you can only write your code here!
+  let jam = Math.floor(menit / 60);
+  let sisa = menit % 60;
+
+  if(sisa <10){
+    sisa = "0" + sisa;
+  }
+
+  let waktu = jam + ":" + sisa;
+
+  console.log(waktu)
 }
 
 // TEST CASES

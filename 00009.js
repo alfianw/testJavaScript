@@ -6,6 +6,17 @@
 
 function palindrome(kata) {
   // you can only write your code here!
+  let balikan = "";
+
+  for(let i = kata.length -1; i >= 0; i--){
+    balikan += kata[i]
+  }
+
+  if(kata === balikan){
+    console.log("true")
+  } else if(kata !== balikan){
+    console.log("false")
+  }
 }
 
 // TEST CASES

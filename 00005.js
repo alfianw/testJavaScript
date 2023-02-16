@@ -7,6 +7,14 @@
 
 function balikKata(kata) {
   // you can only write your code here!
+  
+  let balikan = "";
+
+  for(let i = kata.length -1; i >= 0; i--){
+    balikan += kata[i];
+  }
+
+  console.log(balikan);
 }
 
 // TEST CASES

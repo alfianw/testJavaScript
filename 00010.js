@@ -7,7 +7,29 @@
 // Contoh, jika angka adalah 8, walaupun dia sudah palindrome, harus mencari angka selanjutnya yang palindrome, yaitu 9.
 
 function angkaPalindrome(num) {
-  // you can only write your code here!
+  // you can only write your code here!\
+  const palindrome = (a) => {
+    let balikanAngka = "";
+    let angkaToString = a.toString()
+
+    for (let i = angkaToString.length - 1; i >= 0; i--) {
+      balikanAngka += angkaToString[i]
+    }
+
+    return balikanAngka === angkaToString
+
+  }
+
+  if (palindrome(num)) {
+    num++;
+  }
+
+  while (!palindrome(num)) {
+    num++;
+  }
+
+  console.log(num)
+
 }
 
 // TEST CASES
