@@ -6,6 +6,18 @@
 
 function pasanganTerbesar(num) {
   // you can only write your code here!
+  let angkaToString = num.toString();
+  let panjangAngka = angkaToString.length;
+  let pasanganTerbesar = Number(angkaToString.slice(panjangAngka-2, panjangAngka));
+
+  for (let i = 0; i < panjangAngka-1; i++) {
+    let pasanganAngka = Number(angkaToString.slice(i, i+2));
+    if (pasanganAngka > pasanganTerbesar) {
+      pasanganTerbesar = pasanganAngka;
+    }
+  }
+
+  console.log(pasanganTerbesar)
 }
 
 // TEST CASES

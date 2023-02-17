@@ -6,6 +6,13 @@
 
 function tentukanDeretGeometri(arr) {
   // you can only write your code here!
+  let rasio = arr[1] / arr[0];
+  for (let i = 2; i < arr.length; i++) {
+    if (arr[i] / arr[i-1] !== rasio) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // TEST CASES

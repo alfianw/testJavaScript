@@ -6,6 +6,17 @@
 
 function perkalianUnik(arr) {
   // you can only write your code here!
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let temp = 1;
+    for (let j = 0; j < arr.length; j++) {
+      if (i !== j) {
+        temp *= arr[j];
+      }
+    }
+    result.push(temp);
+  }
+  console.log(result)
 }
 
 // TEST CASES
